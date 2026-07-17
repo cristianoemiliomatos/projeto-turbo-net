@@ -20,7 +20,7 @@ class Cliente:
         with open(caminho_csv, "r", newline="", encoding="utf-8") as arquivo:
             leitura = csv.reader(arquivo)
 
-            next(leitura)  # Pula o cabeçalho
+            next(leitura)  
 
             for linha in leitura:
                 print(f"Plano: {linha[0]} | Velocidade: {linha[1]} | Preço: R$ {linha[2]}")
